@@ -1,0 +1,12 @@
+spin_manifest_version = 2
+
+[application]
+name = "calculator"
+
+[[trigger.http]]
+route = "/..."
+component = "calculator-spin"
+
+[component.calculator-spin]
+# source = "target/wasm32-wasi/release/calculator_spin.wasm"
+source = "composed.wasm"
